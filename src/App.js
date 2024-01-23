@@ -17,6 +17,8 @@ import { NoPage } from "./components/NoPage";
 import { Pages } from "./components/Pages";
 import { Images } from "./components/Images";
 import { Users } from "./components/Users";
+import { Posts } from "./components/posts/Posts";
+import ScrollComponent from "./components/concepts/Scroll";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="/images" element={<Images />} />
             <Route path="/users" element={<Users />} />
             <Route path="/users/page" element={<Pages />} />
+            <Route path="posts" element={<Posts/>}/>
+            <Route path="scroll" element={<ScrollComponent/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </TopNavBar>

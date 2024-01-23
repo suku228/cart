@@ -11,8 +11,8 @@ export const SideNav = () => {
     navigate(path);
   };
   return (
-    <aside class="sidebar">
-      <nav class="nav">
+    <aside className="sidebar">
+      <nav className="nav">
         <div
           onClick={() => {
             onRouteClick("");
@@ -43,6 +43,13 @@ export const SideNav = () => {
         </div>
         <div
           onClick={() => {
+            onRouteClick("posts");
+          }}
+        >
+          <BookIcon/>
+        </div>
+        <div
+          onClick={() => {
             onRouteClick("config");
           }}
         >
@@ -51,6 +58,13 @@ export const SideNav = () => {
         <div
           onClick={() => {
             onRouteClick("users");
+          }}
+        >
+          <PersonIcon/>
+        </div>
+        <div
+          onClick={() => {
+            onRouteClick("scroll");
           }}
         >
           <PersonIcon/>
