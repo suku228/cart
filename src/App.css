@@ -20,13 +20,13 @@
 
 .sidebar {
   padding: 1px;
-  background: #ff8500;
+  background: #f5f5f5;
   float: left;
   height: 100%;
 }
 
 .nav {
-  background: #ff8500;
+  background: #f5f5f5;
   margin: 0;
   height: 100%;
   min-height: 100%;
@@ -38,19 +38,24 @@
 }
 
 .nav div {
-  width: 100%;
+  width: 30px;
   height: 30px;
   padding: 10px;
   list-style: none;
 }
-.nav div:hover {
-  background-color: #ac8051;
-}
+
 .content {
   background: rgb(246, 235, 235);
+  height: 100%;
+  overflow-x: scroll;
 }
 
 .not-found {
   height: 400px;
   width: 400px;
+}
+.home{
+  height: 200px;
+  width: 200px;
+  background-color: red;
 }
